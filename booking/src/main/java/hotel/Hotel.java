@@ -10,8 +10,8 @@ import java.util.List;
 public class Hotel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     private String naziv;
     private String adresa;
@@ -22,7 +22,7 @@ public class Hotel {
     private int prosecnaOcenaSoba;
     private int prihodi;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
